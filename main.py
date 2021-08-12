@@ -88,6 +88,10 @@ def editar_producto(id):
     conect.close()
     return redirect("/formulario")
 
+@app.route("/bootstrap")
+def bootstrap_htm():
+    return render_template('/Bootstrap.html')
+
 if __name__ == '__main__':
     # Configuracion del puerto que escucha del servidor
     app.run(port=3000, debug=True)
