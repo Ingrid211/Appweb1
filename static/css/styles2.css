@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.body{
+    font-family: "comic sans", cursive;
+}
+.registro{
+    width: 400px;
+    background: #000000;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: "comic sans", cursive;
+    color: #611980;
+    box-shadow: 7px 13px 37px #000;
+    background-color: #8EDF92;
+}
+.registro h4{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom:20px;
+}
+.registro img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+}
+.control{
+    width: 100%;
+    background: #96C7E3;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: "comic sans", cursive;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.registro p{
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+}
+.registro a{
+    color: #34543C;
+    text-decoration: none;
+}
+.registro a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.registro .botón{
+    width: 100%;
+    background: #1F53C5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.titulo{
+    font-size: 30px;
+    color:#008000;
+    margin-bottom: 20px;
+    text-align:center;
+}
+.menu{
+    color:#3F1956;
+    font-size:20px;
+    margin-bottom: 20px;
+    text-align: justify and center;
+}
+.tabla{
+    width: 60%;
+    background: #609D7A;
+    padding: 30px;
+    margin: auto;
+    margin-top:60px;
+    border-radius: 4px;
+    font-family: "comic sans";
+    color:white;
+    box-shadow: 7px 13px 37px #000;
+    text-align: justify and center;
+}
+.edit{
+    width: 50px;
+    background: 1F53C5;
+    border-radius: 10px;
+    padding:10px;
+    color:white;
+    margin: 13px 0;
+    font-size:14px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Ingrid Adianel Saavedra Calva">
+    <meta description="Esta es una pagina de prueba de Formulario">
+    <meta keywords="html, aplicaciones web">
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="./static/image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/styles2.css" type="text/css">
+</head>
+    <body>
+      <form action="/editar_producto/{{producto.0}}" method="post">
+       <section class="registro">
+        <h4>PRODUCTO</h4>
+            <input class="control" type="text" id="nombre" name="nombre" placeholder="Ingresa el nombre del producto"  value="{{producto.1}}" required><br>
+            <input class="control" type="text" id="descrip" name="descrip"  placeholder="Descripción del producto" value="{{producto.2}}" required><br>
+            <input class="control" type="text" id="precio" name="precio"  placeholder="Precio del producto" value="{{producto.3}}" required><br>
+            <p>Acepto<a href="#">Terminos y condiciones</a></p>
+            <input class="botón" type="submit" value="Actualizar">
+        </section>
+   </form>
+</body>
+</html>

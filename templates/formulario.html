@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en=MX">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Ingrid Adianel Saavedra Calva">
+    <meta description="Esta es una pagina de prueba de Formulario">
+    <meta keywords="html, aplicaciones web">
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="./static/image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/styles2.css" type="text/css">
+</head>
+    <body>
+      <form action="{{url_for('guardar_producto')}}" method="post">
+       <section class="registro">
+        <h4>PRODUCTO</h4>
+           <img src="./static/image/maceta.gif">
+            <input class="control" type="text" id="nombre" name="nombre" placeholder="Ingresa el nombre del producto"><br>
+            <input class="control" type="text" id="descrip" name="descrip" placeholder="Descripción del producto"><br>
+            <input class="control" type="text" id="precio" name="precio" placeholder="Precio del producto"><br>
+            <p>Acepto<a href="#">Terminos y condiciones</a></p>
+            <input class="botón" type="submit" value="Hecho">
+        </section>
+   </form>
+<div>
+    <br>
+    <br>
+    <h1 class="titulo">Respuesta</h1>
+</div>
+    <div>
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <td class="menu">Producto</td>
+                    <td class="menu">Descripción</td>
+                    <td class="menu">Precio</td>
+                    <td class="menu">Editar</td>
+                    <td class="menu">Eliminar</td>
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for producto in productos %}
+             <tr>
+                    <td>{{producto.1}}</td>
+                    <td>{{producto.2}}</td>
+                    <td>{{producto.3}}</td>
+                    <td class="edit"><a href="/consultar_producto/{{producto.0}}">Editar</a></td>
+                    <td class="edit"><a href="/eliminar_producto/{{producto.0}}">Eliminar</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
