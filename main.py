@@ -88,7 +88,7 @@ def editar_producto(id):
     conect.close()
     return redirect("/formulario")
 
-@app.route("/bootstrap")
+@app.route("/Bootstrap")
 def bootstrap_htm():
     return render_template('/Bootstrap.html')
 
