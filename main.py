@@ -94,4 +94,4 @@ def bootstrap_htm():
 
 if __name__ == '__main__':
     # Configuracion del puerto que escucha del servidor
-    app.run(port=3000, debug=True)
+    app.run()
